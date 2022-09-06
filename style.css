@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5;
+    background-color: #212121;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
 }
@@ -19,12 +19,12 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: #444;
+    color: #FFF;
 }
 
 #card {
-    height: 50vh;
-    background-color: #FAFAFA;
+    height: calc(100vh - 50%);
+    background-color: #3D3D3D;
     border-radius: 10px;
     padding: 3.2em 1.2em 1.2em 1.2em;
     position: relative;
@@ -47,7 +47,7 @@ a {
 
 a:hover {
     transition: color 0.5s ease-in-out;
-    color: #444;
+    color: #DDD;
 }
 
 ul {
@@ -62,7 +62,7 @@ ul {
 }
 
 #footer {
-    /* margin-top: 3em; */
+    color: #DDD;
     display: flex;
     flex-direction: column;
     align-items: center;
