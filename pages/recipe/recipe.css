@@ -30,6 +30,10 @@ h1 {
 }
 
 blockquote {
+    margin: 0;
+}
+
+figure {
     background-color: #FFFFA8;
     font-style: italic;
 }
