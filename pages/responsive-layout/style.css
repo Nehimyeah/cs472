@@ -67,6 +67,12 @@ footer {
     color: white;
 }
 
+#validators {
+    position: fixed;
+    right: 0;
+    bottom: 40vh;
+}
+
 @media screen and (max-width: 600px) {
     main {
         height: 40vh;
