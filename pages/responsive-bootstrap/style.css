@@ -1,0 +1,43 @@
+header {
+    height: 10vh;
+    background-color: cadetblue;
+}
+
+* {
+    margin: 0 !important;
+}
+
+nav {
+    background-color: darkslategray;
+}
+
+main {
+    height: 70vh;
+}
+
+main div:first-child {
+    background-color: #aaa;
+}
+
+main div:nth-child(2) {
+    background-color: #bbb;
+}
+
+main div:nth-child(3) {
+    background-color: #cfcfcf;
+}
+
+footer {
+    height: 13vh;
+    background-color: darkslategray;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        height: 50vh;
+    }
+    main div:nth-child(2) {
+        order: 1;
+        width: 100%;
+    }
+}
