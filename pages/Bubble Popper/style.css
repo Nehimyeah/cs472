@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important;
+}
+
+#game {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+}
+
+#controls {
+    z-index: 1200;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+#message {
+    color: red;
+    display: none;
+}
+
+button {
+    align-self: start;
+}
+
+
+.balloon {
+    border-radius: 50%;
+    position: absolute;
+    transition: all 2s;
+}
+
+.fade-out {
+    opacity: .5;
+    transition: opacity 1s;
+}
