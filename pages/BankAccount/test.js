@@ -125,6 +125,14 @@ describe("SavingAccount", function() {
             assert.equal(account.toString(), "Account 1000: balance 0: Interest 2.5");
         })
     })
+
+    describe("endOfMonth", function() {
+        it("End of month report on account number 1000 initial balance 100 interest 2.5",
+            function() {
+                account.deposit(100);
+                assert.equal(account.endOfMonth(), 'Interest added SavingsAccount 1000: balance: 102.5 interest: 2.5');
+        })
+    })
 })
 
 
