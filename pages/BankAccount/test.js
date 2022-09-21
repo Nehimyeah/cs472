@@ -69,6 +69,12 @@ describe("Account", function() {
             assert.equal(account.toString(), strVal)
         })
     })
+
+    describe("endOfMonth", function() {
+        it("Empty string is returned regardless of account status", function() {
+            assert.equal(account.endOfMonth(), "");
+        })
+    })
 })
 
 describe("SavingAccount", function() {
