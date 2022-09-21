@@ -8,7 +8,24 @@ class CheckingAccount extends Account{
         return this._overdraft;
     }
 
-    setOverdraft() {
-        
+    setOverdraft(val) {
+        if (val <= 0) {
+            throw new RangeError("Withdraw amount has to be greater than zero");
+        }
+        this._overdraft = val;
+    }
+
+    withdraw(amt) {
+        if (amt <= 0) {
+            throw new RangeError("Withdraw amount has to be greater than zero");
+        }
+        if (amt > (this._balance + this._overdraft)) {
+            throw Error("Insufficient funds");
+        }
+        this._balance = this.getBalance() - amt;
+    }
+
+    toString() {
+        return `${super.toString()}: Overdraft ${this.getOverdraft()}`;
     }
 }
