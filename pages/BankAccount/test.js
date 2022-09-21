@@ -186,6 +186,17 @@ describe("CheckingAccount", function() {
             assert.equal(account.toString(), "Account 1000: balance 0: Overdraft 500");
         })
     })
+
+    describe("endOfMonth", function() {
+        it("empty string because account is not overdrawn", function() {
+            assert.equal(account.endOfMonth(), '')
+        })
+
+        it("warning string when account is overdrawn", function() {
+            account.withdraw(100);
+            assert.equal(account.endOfMonth(), 'Warning, low balance CheckingAccount 1000: balance: -100 overdraft limit: 500');
+        })
+    })
 })
 
 
