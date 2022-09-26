@@ -1,0 +1,25 @@
+<%- include('fragments/header.ejs') %>
+<%- include('fragments/menu.ejs') %>
+    <div id="container">
+        <div>
+            <h1>Total number of items: <%= products.length %></h1>
+            <h3>Total amount to be paid: <%= ShoppingCart.getTotalPrice().toFixed(2) %></h3>
+        </div>
+        <div id="products">
+            <% for(product of products){%>
+                <div class="product-item">
+                    <div class="item-header">
+                        <h1><%= product.title %></h1>
+                        <p><%= product.price %></p>
+                    </div>
+                    <div class="item-body">
+                        <p>
+                            <%= product.description %>
+                        </p>
+                    </div>
+                </div>
+                <%}
+            %>
+        </div>
+    </div>
+<%- include('fragments/footer.ejs') %>
