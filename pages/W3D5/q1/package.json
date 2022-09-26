@@ -1,0 +1,14 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "This is a WAP course at MIU for Express assignment question #1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nehemiah Tefera",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
