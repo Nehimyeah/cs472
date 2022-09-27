@@ -1,0 +1,27 @@
+<%- include('fragments/header.ejs') %>
+<%- include('fragments/menu.ejs') %>
+    <div id="container">
+        
+        <div id="products">
+            <%if (cart === undefined) {%>
+                <h1>You have no items in your cart</h1>
+            <%} else {%>
+                <% for(id in cart){%>
+                    <div class="product-item">
+                        <div class="item-header">
+                            <h1><%= cart[id].product.title %></h1>
+                            <p><%= cart[id].product.price %></p>
+                        </div>
+                        <div class="item-body">
+                            <p>
+                                <%= cart[id].product.description %>
+                            </p>
+                        </div>
+                        <p class="bold">Item quantity: <%=cart[id].quantity%></p>
+                    </div>
+                    <%}
+                %>
+            <%}%>
+        </div>
+    </div>
+<%- include('fragments/footer.ejs') %>

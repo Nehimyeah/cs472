@@ -1,0 +1,15 @@
+{
+  "name": "session",
+  "version": "1.0.0",
+  "description": "This is an assignment on sessions as part of WAP course at MIU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nehemiah Tefera",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1"
+  }
+}

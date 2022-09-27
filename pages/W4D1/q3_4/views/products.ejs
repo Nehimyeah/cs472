@@ -1,0 +1,21 @@
+<%- include('fragments/header.ejs') %>
+<%- include('fragments/menu.ejs') %>
+    <div id="container">
+        <div id="products">
+            <% for(product of products){%>
+                <a href="/product/<%=product.id%>" class="product-item">
+                    <div class="item-header">
+                        <h1><%= product.title %></h1>
+                        <p><%= product.price %></p>
+                    </div>
+                    <div class="item-body">
+                        <p>
+                            <%= product.description %>
+                        </p>
+                    </div>
+                </a>
+                <%}
+            %>
+        </div>
+    </div>
+<%- include('fragments/footer.ejs') %>
